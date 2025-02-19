@@ -1,0 +1,63 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #1d7fff, #1c99fe, #397bff, #2e54ff);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  color: white;
+  font-size: 4rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: textGlow 3s ease-in-out infinite alternate;
+  width: 100vw;
+  text-align: center;
+}
+
+.join-now {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: textGlow 3s ease-in-out infinite alternate;
+  width: 100vw;
+  text-align: center;
+  font-family: "Bungee Spice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4);
+  }
+}
